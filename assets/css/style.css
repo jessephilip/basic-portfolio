@@ -28,7 +28,7 @@ header {
 	margin-left: 5%;
 }
 
-.links {
+nav {
 	float: right;
 	line-height: 100px;
 	padding-right: 10%;
@@ -46,18 +46,17 @@ footer {
 
 #profilePic {
 	width: 150px;
-	float: left;
 	padding: 15px 15px 15px 0;
 }
 
 #about, #porfolio, #contact {
 	width: 650px;
-	float: left;
 }
 	
 aside {
 	width: 270px;
-	float: right;
+	position: relative;
+	
 }
 
 aside img {
