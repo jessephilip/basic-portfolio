@@ -2,6 +2,10 @@
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 h1, h2, h3 {
 	font-family: 'Georgia', Times, "Times New Roman", serif;
 }
@@ -43,10 +47,13 @@ nav {
 
 footer {
 	background-color: #666666;
-	height: 100px;
+	height: 75px;
 	line-height: 100px;
 	clear: both;
 	text-align: center;
+}
+
+footer p {
 	color: white;
 }
 
@@ -148,9 +155,30 @@ input[type=submit] {
 .projectTitle {
 	background-color: #4aaaa5;
 	color: #ffffff;
-	width: 200px;	
+	width: 250px;	
 	position: absolute;
 	text-align: center;
-	margin: 150px 0 0 0;
+	margin: 200px 0 0 0;
 	padding: 5px 0;
+}
+
+.line {
+	background-color: #4aaaa5;
+	height: 5px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: 75px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 75px; 
+}
+.site-footer {
+  background: #666666;
 }
